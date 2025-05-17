@@ -10,3 +10,29 @@ vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { desc = "Split vertically (rig
 
 -- Shortcut Save File
 vim.keymap.set("n", "<leader>w", ":w<CR>",       { desc = "Save file" })
+
+
+-- Clears search highlights
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+-- jj becomes esc
+vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode with jj" })
+
+-- Toggles Neotree
+vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle NeoTree" })
+
+-- Toggle spellcheck
+vim.keymap.set("n", "<leader>sp", ":setlocal spell! spelllang=en_us<CR>", { desc = "Toggle spell check" })
+
+-- Project search (including hidden files)
+vim.keymap.set("n", "<leader>fa", ":Telescope find_files hidden=true no_ignore=true<CR>", { desc = "Find all files" })
+
+-- Grep current word
+vim.keymap.set("n", "<leader>fw", ":Telescope grep_string<CR>", { desc = "Grep word under cursor" })
+
+-- Fold keybinds
+map("n", "<leader>z", "za", { desc = "Toggle fold" })
+map("n", "<leader>o", "zR", { desc = "Open all folds" })
+map("n", "<leader>c", "zM", { desc = "Close all folds" })
+
+

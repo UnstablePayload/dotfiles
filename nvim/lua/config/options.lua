@@ -56,18 +56,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
--- Clear highlights on search when pressing <Esc> in normal mode
---  See `:help hlsearch`
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 
 
-
-
-
-
-
-
-
-
-
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.foldmethod = "expr"
+    vim.opt_local.foldexpr = [[getline(v:lnum) =~ '^#' ? '>' . len(matchstr(getline(v:lnum), '#\+')) : '=']]
+    vim.opt_local.foldenable = true
+    vim.opt_local.foldlevel = 99 -- Show all folds open by default
+  end,
+})
