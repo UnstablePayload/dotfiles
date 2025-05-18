@@ -30,9 +30,5 @@ vim.keymap.set("n", "<leader>fa", ":Telescope find_files hidden=true no_ignore=t
 -- Grep current word
 vim.keymap.set("n", "<leader>fw", ":Telescope grep_string<CR>", { desc = "Grep word under cursor" })
 
--- Fold keybinds
-map("n", "<leader>z", "za", { desc = "Toggle fold" })
-map("n", "<leader>o", "zR", { desc = "Open all folds" })
-map("n", "<leader>c", "zM", { desc = "Close all folds" })
 
 
