@@ -8,10 +8,10 @@ local config = wezterm.config_builder()
 config.initial_cols = 120
 config.initial_rows = 40
 
-config.font_size = 18
+config.font_size = 16
 config.color_scheme = 'shades-of-purple'
 
-config.window_background_opacity = .7
+config.window_background_opacity = .8
 
 -- Returns the config
 return config
