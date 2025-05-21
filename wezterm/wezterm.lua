@@ -1,16 +1,17 @@
-local wezterm = require "wezterm"
+-- Pull in the wezterm API
+local wezterm = require 'wezterm'
 
+-- This holds the configuration
+local config = wezterm.config_builder()
 
-function scheme_for_appearance(appearance)
-  if appearance:find "Dark" then
-    return "Catppuccin Mocha"
-  else
-    return "Catppuccin Latte"
-  end
-end
+-- Configuration Goes Here
+config.initial_cols = 120
+config.initial_rows = 40
 
-return {
-  -- ...your existing config
-  color_scheme = scheme_for_appearance(wezterm.gui.get_appearance()),
-}
+config.font_size = 18
+config.color_scheme = 'shades-of-purple'
 
+config.window_background_opacity = .7
+
+-- Returns the config
+return config
