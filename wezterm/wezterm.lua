@@ -14,7 +14,7 @@ config.font_size = 15
 
 config.window_background_opacity = .8
 config.macos_window_background_blur = 20
--- config.tab_bar_at_bottom = truei
-config.enable_tab_bar = false
+config.tab_bar_at_bottom = true
+config.enable_tab_bar = ture
 -- Returns the config
 return config
