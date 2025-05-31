@@ -10,7 +10,7 @@ config.initial_rows = 40
 
 config.color_scheme = 'kanagawabones'
 font = wezterm.font('JetBrains Mono Nerd Font')
-config.font_size = 15
+config.font_size = 18
 
 config.window_background_opacity = .8
 config.macos_window_background_blur = 20
