@@ -330,7 +330,9 @@ return{
                     scope_highlight = nil,
                 },
                 custom = {
-                    todo = { raw = '[-]', rendered = '󰥔 ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
+                    todo = { raw = '[-]', rendered = '󰓨  ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
+                    in_progress = { raw = '[/]', rendered = '󰑓 ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
+
                 },
             },
 
