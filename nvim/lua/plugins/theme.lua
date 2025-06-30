@@ -1,4 +1,4 @@
--- ~/.config/nvim/lua/plugins/theme.lua
+--  -- ~/.config/nvim/lua/plugins/theme.lua
 return {
   "catppuccin/nvim",            -- make sure you’ve installed the plugin itself
   name = "catppuccin",

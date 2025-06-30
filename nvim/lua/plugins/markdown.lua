@@ -432,6 +432,20 @@ return{
             example = { raw = '[!EXAMPLE]', rendered = '󰉹 Example', highlight = 'RenderMarkdownHint' },
             quote = { raw = '[!QUOTE]', rendered = '󱆨 Quote', highlight = 'RenderMarkdownQuote' },
             cite = { raw = '[!CITE]', rendered = '󱆨 Cite', highlight = 'RenderMarkdownQuote' },
+            note = { raw = '[!NOTE]', rendered = '󰋽 Note', highlight = 'RenderMarkdownInfo' },
+            tip = { raw = '[!TIP]', rendered = '󰌶 Tip', highlight = 'RenderMarkdownSuccess' },
+            important = { raw = '[!IMPORTANT]', rendered = '󰅾 Important', highlight = 'RenderMarkdownHint' },
+            debug = { raw = '[!DEBUG]', rendered = '󰘳 Debug', highlight = 'RenderMarkdownWarn' },
+            testing = { raw = '[!TESTING]', rendered = '󰙨 Testing', highlight = 'RenderMarkdownInfo' },
+
+            -- Workflow-related
+            in_progress = { raw = '[!IN-PROGRESS]', rendered = '󰑓 In Progress', highlight = 'RenderMarkdownInProgress' },
+            on_hold = { raw = '[!ON-HOLD]', rendered = '󰓨 On Hold', highlight = 'RenderMarkdownOnHold' },
+            -- Technical tags
+            optimize = { raw = '[!OPTIMIZE]', rendered = '󰕤 Optimize', highlight = 'RenderMarkdownOptimize' },
+            debug = { raw = '[!DEBUG]', rendered = '󰘳 Debugging', highlight = 'RenderMarkdownDebug' },
+            example_code = { raw = '[!EXAMPLE-CODE]', rendered = '󰉹 Example Code', highlight = 'RenderMarkdownExampleCode' },
+
         },
         link = {
             -- Turn on / off inline link icon rendering.
