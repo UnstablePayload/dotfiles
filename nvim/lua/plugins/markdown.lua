@@ -332,6 +332,7 @@ return{
                 custom = {
                     todo = { raw = '[-]', rendered = '󰓨  ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
                     in_progress = { raw = '[/]', rendered = '󰑓 ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
+                    fail = { raw = '[f]', rendered = '󰅖  ISSUE >>> ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
 
                 },
             },
