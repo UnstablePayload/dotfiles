@@ -105,7 +105,8 @@ source $ZSH/oh-my-zsh.sh
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh/terminal.omp.json')"
 fi
-#
+
+export PATH="/Library/TeX/texbin:$PATH"
 #
 #
 #
