@@ -102,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
   alias l='ls -lah'
   alias python='python3'
 #
+export PATH="/Library/TeX/texbin:$PATH"
+
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh/terminal.omp.json')"
 fi
