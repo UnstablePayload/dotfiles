@@ -12,7 +12,7 @@ config.color_scheme = 'kanagawabones'
 font = wezterm.font('JetBrains Mono Nerd Font')
 config.font_size = 16
 
-config.window_background_opacity = .8
+-- config.window_background_opacity = .8
 config.macos_window_background_blur = 20
 config.tab_bar_at_bottom = true
 config.enable_tab_bar = ture
