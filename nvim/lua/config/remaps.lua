@@ -30,5 +30,15 @@ vim.keymap.set("n", "<leader>fa", ":Telescope find_files hidden=true no_ignore=t
 -- Grep current word
 vim.keymap.set("n", "<leader>fw", ":Telescope grep_string<CR>", { desc = "Grep word under cursor" })
 
+-- Compiles and runs C++ code in a temp binary so it doesnt clutter directory
+vim.keymap.set("n", "<leader>r", function()
+  vim.cmd("w")  -- save the file
+  vim.cmd("split | terminal g++ -std=c++17 -o /tmp/a.out % && /tmp/a.out")
+end, { desc = "Compile and run C++ in terminal" })
 
+-- Runs python code
+vim.keymap.set("n", "<leader>p", function()
+  vim.cmd("w")  -- Save file
+  vim.cmd("split | terminal python3 %")
+end, { desc = "Run Python file in terminal" })
 
