@@ -4,6 +4,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # Aliases
 alias l='ls -lah'
 alias python='python3'
+alias google='web_search google'
+alias bing='web_search bing'
+alias update='brew update && brew upgrade && brew cleanup && brew doctor'
 
 # PATH and build flags
 export PATH="/Library/TeX/texbin:$PATH"
