@@ -16,5 +16,6 @@ config.font_size = 16
 config.macos_window_background_blur = 20
 config.tab_bar_at_bottom = false
 config.enable_tab_bar = false
+config.window_decorations = 'RESIZE'
 -- Returns the config
 return config
