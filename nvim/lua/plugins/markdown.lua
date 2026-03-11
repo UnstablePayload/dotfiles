@@ -146,7 +146,7 @@ return{
             min_width = 0,
             -- Determines if a border is added above and below headings.
             -- Can also be a list of booleans evaluated by `clamp(value, context.level)`.
-            border = false,
+            border = true,
             -- Always use virtual lines for heading borders instead of attempting to use empty lines.
             border_virtual = false,
             -- Highlight the start of the border using the foreground highlight.
