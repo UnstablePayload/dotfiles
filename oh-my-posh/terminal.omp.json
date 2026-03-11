@@ -17,7 +17,7 @@
         {
           "foreground": "#7eb8da",
           "style": "plain",
-          "template": "[<#ffffff>\ue6ae</> {{ .UserName }} - <#ffffff>\uf108</> {{ .HostName }}]",
+          "template": "[<#ffffff>\uf108</> {{ .HostName }}]",
           "type": "session"
         },
         {

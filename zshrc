@@ -38,3 +38,5 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config "$HOME/.config/oh-my-posh/terminal.omp.json")"
 fi
 export EDITOR=nvim
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
